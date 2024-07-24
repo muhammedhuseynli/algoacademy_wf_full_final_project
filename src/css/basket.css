@@ -1,0 +1,21 @@
+.basketMainDiv > h1, p{
+    color: white;
+}
+
+.basketMainDiv > button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5864EB;
+    color: white;
+    border: 1px solid #5864EB;
+    border-radius: 6px;
+}
+
+.basketMainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    height: 550px;
+  }
