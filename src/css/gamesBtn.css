@@ -1,0 +1,20 @@
+.category {
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #15cdce;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
