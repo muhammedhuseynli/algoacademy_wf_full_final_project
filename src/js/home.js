@@ -3,16 +3,20 @@ import { Link } from "react-router-dom";
 import GamesBtn from "../js/gamesBtn.js";
 import PubgMobile from "../js/pubgMobile.js";
 import MobileLegends from "../js/mobileLegends.js";
+import Footer from "./footer.js";
+import Header from "./header.js";
 
-function Home() {
+function Home({ addToBasket }) {
   return (
+    <>
+    <Header />
     <div>
-      <Link to="/">
         <GamesBtn />
-        <PubgMobile />
-        <MobileLegends />
-      </Link>
+        <PubgMobile addToBasket={addToBasket} />
+        <MobileLegends addToBasket={addToBasket} />
+        <Footer />
     </div>
+    </>
   );
 }
 

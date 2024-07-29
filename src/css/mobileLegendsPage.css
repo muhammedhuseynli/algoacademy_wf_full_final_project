@@ -1,0 +1,112 @@
+.mobileLegendsContainer {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.mobileLegendsMainPhoto {
+  height: 600px;
+  width: 290px;
+  border: 1px solid gray;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #313338;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 170px;
+}
+
+.mobileLegendsMainPhoto > p {
+  font-size: small;
+  margin: 10px;
+  color: #fff;
+}
+
+.mobileLegendsBanner {
+  width: 800px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #222223;
+  text-align: center;
+}
+
+.mobileLegendsMainPhoto img,
+.mobileLegendsBanner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.products{
+  border: 1px solid #222223;
+  background-color: #30343f;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 10px;
+  width: 760px;
+}
+
+.product{
+  display: flex;
+}
+
+
+
+
+
+
+/* Responsive stil */
+@media (max-width: 1200px) {
+  .mobileLegendsMainPhoto {
+    margin-left: 20px; /* Daha küçük ekranlar için sol boşluğu azaltalım */
+    height: 500px; /* Daha küçük ekranlar için yüksekliği azaltalım */
+    width: 240px; /* Daha küçük ekranlar için genişliği azaltalım */
+  }
+
+  .mobileLegendsBanner {
+    width: 600px; /* Daha küçük ekranlar için genişliği azaltalım */
+  }
+
+  .products {
+    width: 90%; /* Daha küçük ekranlar için genişliği %90 yapalım */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product {
+    width: 100%; /* Daha küçük ekranlarda ürünleri tek sütun yapalım */
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileLegendsContainer {
+    flex-direction: column; /* Daha küçük ekranlar için dikey düzenleyelim */
+    align-items: center; /* Merkezi hizalayalım */
+  }
+
+  .mobileLegendsMainPhoto {
+    margin-left: 0; /* Sol boşluğu sıfırlayalım */
+    margin-right: 0; /* Sağ boşluğu sıfırlayalım */
+    width: 90%; /* Genişliği %90 yapalım */
+    height: auto; /* Yüksekliği içeriğe göre ayarlayalım */
+  }
+
+  .mobileLegendsBanner {
+    width: 90%; /* Genişliği %90 yapalım */
+    margin-top: 20px; /* Üst boşluk ekleyelim */
+    margin-left: 20px;
+  }
+
+  .products {
+    width: 90%; /* Genişliği %90 yapalım */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product {
+    width: 100%; /* Daha küçük ekranlarda ürünleri tek sütun yapalım */
+    flex-wrap: wrap;
+  }
+
+}
+

@@ -13,13 +13,15 @@ import pubgMobile from "../img/pubgMobile.webp";
 import valorant from "../img/valorant.webp";
 import apexLegends from "../img/apexLegends.webp";
 import whiteOut from "../img/whiteOut.webp";
+import { Link } from 'react-router-dom';
+
 
 function GamesBtn() {
   return (
     <div className="main">
       <div className="categories">
         <div className="category">
-          <img src={mobileLegends}/>
+          <Link to="/MobileLegends" className="anyLink"><img src={mobileLegends}/></Link>
         </div>
         <div className="category">
           <img src={brawlStars}/>
@@ -27,37 +29,37 @@ function GamesBtn() {
         <div className="category">
           <img src={clashOfClans}/>
         </div>
-        <div className="category">
+        <div className="category category3">
           <img src={clashRoyale}/>
         </div>
-        <div className="category">
+        <div className="category category3">
           <img src={freeFire}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={genshinImpact}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={hayDay}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={honorOfKings}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={lol}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={pashaFencer}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={pubgMobile}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={valorant}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={apexLegends}/>
         </div>
-        <div className="category">
+        <div className="category category2">
           <img src={whiteOut}/>
         </div>
       </div>

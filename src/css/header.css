@@ -2,22 +2,27 @@ header {
   display: flex;
   background-color: #30343f;
   height: 130px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 input {
   height: 33px;
-  width: 500px;
-  margin-top: 50px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
   margin-left: 80px;
   background-color: #1e1f22;
   border: 1px solid #1e1f22;
   border-radius: 6px;
   color: white;
+  padding: 5px 10px;
 }
 
 .header-img {
   margin-left: 120px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 i {
@@ -27,7 +32,7 @@ i {
 
 i.fa-regular {
   font-size: 150%;
-  margin-top: 55px;
+  margin-top: 15px;
   margin-left: 200px;
 }
 
@@ -38,12 +43,13 @@ i.fa-regular {
   border-radius: 5px;
   width: 130px;
   height: 30px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-left: 170px;
+  position: relative;
 }
 
 .account:hover {
-  background-color: #4853C0;
+  background-color: #4853c0;
 }
 
 i.fa-solid {
@@ -61,7 +67,114 @@ h5 {
   margin-left: auto;
 }
 
-.fa-cart-shopping{
-  margin-top: 53px;
+.fa-cart-shopping {
+  margin-top: 10px;
   margin-left: 40px;
+}
+
+.loginAndRegister {
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background-color: #3d4450;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.loginAndRegister h4 {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .account {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+
+  .loginAndRegister {
+    width: 150px;
+  }
+
+  .category2 {
+    display: none;
+  }
+
+  .header-img {
+    align-self: center;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    padding: 10px;
+  }
+  .downArrow {
+    display: none;
+  }
+
+  .account {
+    width: 40px;
+  }
+
+  .fa-user {
+    margin-left: 10px;
+  }
+
+  .accountName {
+    display: none;
+  }
+
+  .fa-cart-shopping {
+    margin-top: 40px !important;
+  }
+
+  .headerInput {
+    display: none;
+  }
+  .category3 {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  header {
+    padding: 10px;
+  }
+  .downArrow {
+    display: none;
+  }
+
+  .account {
+    width: 40px;
+  }
+
+  .fa-user {
+    margin-left: 10px;
+  }
+
+  .accountName {
+    display: none;
+  }
+
+  .fa-cart-shopping {
+    margin-top: 40px !important;
+  }
+
+  .headerInput {
+    display: none;
+  }
+  .category3 {
+    display: none;
+  }
 }

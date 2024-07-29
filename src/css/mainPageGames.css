@@ -8,8 +8,16 @@
   border-radius: 8px;
   background: linear-gradient(to right, #3a404a 30%, rgba(0, 0, 0, 0) 70%),
     url("../img/pubgMobileBackground.webp") no-repeat right center;
-  background-size: cover;
   display: flex;
+}
+
+/* Responsive stil */
+@media (max-width: 768px) {
+  .pubgBackground {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 .mobileLegendsBackground {
@@ -22,18 +30,16 @@
   border-radius: 8px;
   background: linear-gradient(to right, #3a404a 30%, rgba(0, 0, 0, 0) 70%),
     url("../img/mobileLegendsBackground.webp") no-repeat right center;
-  background-size: cover;
   display: flex;
 }
 
-.discover1 {
-  position: absolute;
-  margin-left: 1270px;
-  margin-top: 35px;
-  background-color: gray;
-  border: 1px solid gray;
-  padding: 5px;
-  color: white;
+/* Responsive stil */
+@media (max-width: 768px) {
+  .mobileLegendsBackground {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
 }
 
 .pubg {
@@ -46,6 +52,9 @@
   display: flex;
   margin-top: 50px;
   margin-left: 35px;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: center;
 }
 
 .uc1 {
@@ -57,14 +66,17 @@
   height: 270px;
   margin-left: 40px;
   border-radius: 6px;
+  margin-bottom: 20px; 
 }
 
-.uc1 > img{
+.uc1 > img {
   object-fit: contain;
   position: absolute;
   width: 100px;
   height: 100px;
-  margin-left: 30px;
+  top: 0;
+  left: 37%;
+  transform: translateX(-50%);
   margin-top: 10px;
 }
 
@@ -72,15 +84,43 @@
   color: white;
   background-color: #222223;
   padding: 10px;
-  border: 3px solid #42b7df;
+  border: 2px solid #42b7df;
   border-radius: 5px;
 }
 
-.uc1 > p{
+.uc1 > p {
   margin-top: 120px;
 }
 
-.uc1 > p,h3,button{
-  margin-left: 10px;
-
+.uc1 > p, h3, button {
+  margin-left: 0px;
 }
+
+/* Responsive stil */
+@media (max-width: 768px) {
+  .main3 {
+    margin: 20px 10px; 
+    justify-content: center;
+  }
+
+  .uc1 {
+    width: calc(50% - 20px); 
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+
+  .uc1:nth-child(odd) {
+    margin-left: 0; 
+  }
+
+  .uc1:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .uc1 {
+    margin-left: 5px;
+  }
+}
+

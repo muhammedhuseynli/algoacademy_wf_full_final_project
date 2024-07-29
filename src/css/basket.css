@@ -1,21 +1,94 @@
-.basketMainDiv > h1, p{
-    color: white;
+
+.basketMainDiv > h1,
+p {
+  color: #ffffff;
 }
 
-.basketMainDiv > button{
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #5864EB;
-    color: white;
-    border: 1px solid #5864EB;
-    border-radius: 6px;
+.basketMainDiv button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5864eb;
+  color: white;
+  border: 1px solid #5864eb;
+  border-radius: 6px;
+}
+
+.basketContent h1{
+  color: white;
+  margin-top: 40px;
+}
+
+.basketMain3{
+  margin-top: 100px;
 }
 
 .basketMainDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    text-align: center;
-    height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.uc1 {
+  color: white;
+  border: 1px solid gray;
+  overflow: hidden;
+  position: relative;
+  width: 160px;
+  height: 270px;
+  margin-left: 40px;
+  border-radius: 6px;
+}
+
+.uc1 > img {
+  object-fit: contain;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.uc1 > button {
+  color: white;
+  background-color: #222223;
+  padding: 10px;
+  border: 2px solid #42b7df;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.uc1 > button:hover {
+  background-color: #42b7df;
+}
+.uc1 > p {
+  margin-top: 120px;
+}
+
+.uc1 > p,
+h3,
+button {
+  margin-left: 10px;
+}
+
+.totalPrice {
+  background-color: #5864eb;
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: left;
+  min-width: 200px;
+} 
+
+
+@media (max-width: 400px) {
+  .basketContent {
+    margin-top: 250px;
   }
+
+  .main3 > .uc1 {
+    flex-wrap: wrap;
+  }
+}
+
